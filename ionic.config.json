@@ -1,0 +1,7 @@
+{
+  "name": "tareaseis",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
