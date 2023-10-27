@@ -1,0 +1,29 @@
+ion-header[translucent="true"] {
+    ion-toolbar {
+      ion-title {
+        font-weight: bold;
+      }
+    }
+  }
+  
+  ion-content {
+    ion-list {
+      ion-item {
+        ion-label {
+          .title {
+            font-size: 18px; 
+            font-weight: bold; 
+          }
+  
+          .summary {
+            font-size: 14px; 
+          }
+  
+          a {
+            color: #007bff; 
+            text-decoration: none; 
+          }
+        }
+      }
+    }
+  }

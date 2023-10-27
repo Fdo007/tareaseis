@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Edad basada en nombre</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input [(ngModel)]="personName"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="determineAge()">Determinar Edad</ion-button>
+
+  <ion-card *ngIf="age">
+    <ion-card-header>
+      {{ ageMessage }}
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="ageImage" alt="Estado">
+      <p>Edad: {{ age }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+
+
+
+
